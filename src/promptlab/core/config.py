@@ -37,6 +37,12 @@ class Settings(BaseSettings):
     litellm_max_tokens: int = 2048
     litellm_timeout: int = 30
 
+    # API Keys for different LLM providers
+    openai_api_key: Optional[str] = None
+    anthropic_api_key: Optional[str] = None
+    google_api_key: Optional[str] = None
+    qwen_api_key: Optional[str] = None
+
     # Logging settings
     log_level: str = "INFO"
     log_format: str = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"

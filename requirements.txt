@@ -12,6 +12,7 @@ pydantic-settings>=2.1.0
 
 # LLM integration
 litellm>=1.30.0
+aiohttp>=3.9.0
 
 # Frontend for dashboard
 streamlit>=1.30.0
